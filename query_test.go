@@ -450,7 +450,7 @@ func BenchmarkSQLite3QueryEvents(b *testing.B) {
 	defer os.Remove(f.Name())
 	s := &sqlite3.SQLite3Backend{DatabaseURL: f.Name()}
 	s.Init()
-	queryEvents(b, s, 25_000)
+	queryEvents(b, s, 100_000)
 }
 
 func BenchmarkBoltQueryEvents(b *testing.B) {
@@ -461,5 +461,5 @@ func BenchmarkBoltQueryEvents(b *testing.B) {
 	s.Init()
 	// Disable batching since no parallel writes in tests
 	s.DB.MaxBatchSize = 0
-	queryEvents(b, s, 25_000)
+	queryEvents(b, s, 100_000)
 }

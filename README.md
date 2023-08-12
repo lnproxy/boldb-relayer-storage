@@ -12,10 +12,10 @@ goos: ...
 goarch: ...
 pkg: github.com/lnproxy/boltdb-relayer-storage
 cpu: ...
-BenchmarkSQLite3QueryEvents/IDs-8         	                25	  53705298 ns/op
-BenchmarkSQLite3QueryEvents/Authors-8     	                28	  44777764 ns/op
-BenchmarkSQLite3QueryEvents/Tags-8        	                26	  43390974 ns/op
-BenchmarkSQLite3QueryEvents/Kinds-8       	                15	  75601363 ns/op
+BenchmarkSQLite3QueryEvents/IDs-8         	              25	  53705298 ns/op
+BenchmarkSQLite3QueryEvents/Authors-8     	              28	  44777764 ns/op
+BenchmarkSQLite3QueryEvents/Tags-8        	              26	  43390974 ns/op
+BenchmarkSQLite3QueryEvents/Kinds-8       	              15	  75601363 ns/op
 BenchmarkSQLite3QueryEvents/Authors,Kinds-8         	      38	  43619331 ns/op
 BenchmarkSQLite3QueryEvents/Since-8                 	       7	 154081020 ns/op
 BenchmarkSQLite3QueryEvents/Authors,Since-8         	      31	  42642253 ns/op
